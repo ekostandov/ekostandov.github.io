@@ -5,7 +5,7 @@
 	<title>Shop</title>
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="newstyle.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	</script>
@@ -74,39 +74,80 @@
 		</div>
 	</header>
 	<main class="main">
-		<br><br>
 		<div class="container">
 			<div class="row">
+				<!-- FILTER -->
 				<div class="col-md-3 whitecolor">
 					<form class="product-filter" action="">
 						<div class="left">
-						<p>DEVICE TYPE</p>
-						<input type="checkbox" name="devicetype" value="laptop"> Laptop <br>
-						<input type="checkbox" name="devicetype" value="tablet"> Tablet <br>
-						<br>
-						<p>COLOR</p>
-						<input type="checkbox" name="color" value="black"> Black <br>
-						<input type="checkbox" name="color" value="red"> Red <br>
-						<input type="checkbox" name="color" value="green"> Green <br>
-						<input type="checkbox" name="color" value="blue"> Blue <br>
-						<input type="checkbox" name="color" value="orange"> Orange <br>
-						<br>
-						<p>RAM</p>
-						<input type="checkbox" name="ram" value="gb1"> 1GB <br>
-						<input type="checkbox" name="ram" value="gb2"> 2GB <br>
-						<input type="checkbox" name="ram" value="gb4"> 4GB <br>
-						<input type="checkbox" name="ram" value="gb6"> 6GB <br>
-						<input type="checkbox" name="ram" value="gb8"> 8GB <br>
-						<br>
-						<a class="whitecolor" href="">Show more options...</a>
-						<br><br>
+						<!-- DEVICE TYPE -->
+						<p class="pad-top">
+							<span class="text-uppercase">device type</span>
+						</p>
+						<input type="checkbox" name="devicetype" value="laptop" class="custom-input input-padding" id="laptop">
+						<label for="laptop" class="input-label input-padding">
+							<span class="text-capitalize"> laptop </span>
+						</label> <br>
+						<input type="checkbox" name="devicetype" value="tablet" class="custom-input input-padding" id="tablet"> 
+						<label for="tablet" class="input-label input-padding-top pad-bot">
+							<span class="text-capitalize"> tablet </span>
+						</label>
+						<!-- COLOR -->
+						<p class="pad-top">
+							<span class="text-uppercase">color</span>
+						</p>
+						<input type="checkbox" name="color" value="black" class="custom-input input-padding" id="black"> 
+							<label for="black" class="input-label input-padding">
+								<span class="text-capitalize"> black </span>
+							</label> <br>
+						<input type="checkbox" name="color" value="red" class="custom-input input-padding" id="red"> 
+						<label for="red" class="input-label input-padding">
+							<span class="text-capitalize"> red </span>
+						</label> <br>			
+						<input type="checkbox" name="color" value="green" class="custom-input input-padding" id="green"> 
+						<label for="green" class="input-label input-padding">
+							<span class="text-capitalize"> green </span>
+						</label> <br>						
+						<input type="checkbox" name="color" value="blue" class="custom-input input-padding" id="blue"> 
+						<label for="blue" class="input-label input-padding">
+							<span class="text-capitalize"> blue </span>
+						</label> <br>						
+						<input type="checkbox" name="color" value="orange" class="custom-input input-padding" id="orange"> 
+						<label for="orange" class="input-label input-padding-top pad-bot">
+							<span class="text-capitalize"> orange </span>
+						</label> <br>
+						<!-- RAM -->
+						<p class="pad-top">
+							<span class="text-uppercase">ram</span>
+						</p>
+						<input type="checkbox" name="ram" value="gb1" class="custom-input input-padding" id="gb1"> 
+						<label for="gb1" class="input-label input-padding">
+							<span class="text-uppercase"> 1gb </span>
+						</label> <br>						
+						<input type="checkbox" name="ram" value="gb2" class="custom-input input-padding" id="gb2"> 
+						<label for="gb2" class="input-label input-padding">
+							<span class="text-uppercase"> 2gb </span>
+						</label> <br>						
+						<input type="checkbox" name="ram" value="gb4" class="custom-input input-padding" id="gb4"> 
+						<label for="gb4" class="input-label input-padding">
+							<span class="text-uppercase"> 4gb </span>
+						</label> <br>						
+						<input type="checkbox" name="ram" value="gb6" class="custom-input input-padding" id="gb6"> 
+						<label for="gb6" class="input-label input-padding">
+							<span class="text-uppercase"> 6gb </span>
+						</label> <br>						
+						<input type="checkbox" name="ram" value="gb8" class="custom-input input-padding-top" id="gb8"> 
+						<label for="gb8" class="input-label input-padding-top pad-bot">
+							<span class="text-uppercase"> 8gb </span>
+						</label> <br>
 						</div>
+						<a class="whitecolor show-more-options" href="">Show more options...</a>
 						<input class="submit-btm" type="submit" value="SUBMIT">
 					</form>
 				</div>
 				<div class="col-md-9">
 					<div class="histlinks">
-						<a class="whitecolor" href="">Home page</a> <span class="whitecolor"> > </span> 
+						<a class="whitecolor" href="">Home page</a> <span class="whitecolor"> > </span>
 						<a class="whitecolor" href="">Products</a> <span class="whitecolor"> > </span> 
 						<a class="whitecolor" href="">Laptops and Tablets</a>
 					</div>
@@ -124,7 +165,7 @@
 										<option value="sortbypopularity">sort by popularity</option>
 									</select>
 								</form>
-								<img src="photos/icon (nn6).png" alt="" class="select-arrows posabs">
+								<img src="photos/icon (nn6).png" alt="" class="select-arr posabs">
 							</div>
 						</div>
 					</div>
@@ -135,26 +176,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (17).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#1 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#1 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$599<sup> 25</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 						<!-- 1.2 -->
@@ -162,27 +224,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (9).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#2 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#2 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$1250<sup> 99</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button>
-								<br> 
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 						<!-- 1.3 -->
@@ -190,26 +272,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (10).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#3 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#3 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$399<sup> 50</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 					</div>
@@ -220,26 +323,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (16).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#1 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#1 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$599<sup> 25</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 						<!-- 2.2 -->
@@ -247,26 +371,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (14).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#2 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#2 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$1250<sup> 99</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 						<!-- 2.3 -->
@@ -274,26 +419,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (12).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#3 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#3 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$399<sup> 50</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 					</div>
@@ -304,26 +470,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (15).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#1 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#1 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$599<sup> 25</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 						<!-- 3.2 -->
@@ -331,26 +518,47 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (9).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#2 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#2 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$1250<sup> 99</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
 						</div>
 						<!-- 3.3 -->
@@ -358,40 +566,70 @@
 							<div class="icon-background posrel">
 								<img class="device-icon posabs" src="photos/icon (10).png" alt="">
 								<a href="">
-									<img class="fullscr-btm posabs" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-unhov" src="photos/icon (8).png" alt="">
+									<img class="fullscr-btm posabs btm-hov" src="photos/icon (6).png">
 								</a>
 								<a href="">
-									<img class="like-btm posabs" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-unhov" src="photos/icon (5).png" alt="">
+									<img class="like-btm posabs btm-hov" src="photos/icon (7).png" alt="">
 								</a>
 							</div>
 							<div class="product-description">
-								<p class="device-name">#3 Device Name</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-								<p><b>TYPE:</b> Laptop</p>
-								<p><b>SCREEN SIZE:</b> 7 inches</p>
-								<p><b>RAM:</b> 1GB</p>
+								<p class="device-name">
+									<span class="text-capitalize">
+										<strong>#3 device name</strong>
+									</span>
+								</p>
+								<p class="description-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>type:</strong>
+									</span> Laptop
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>screen size:</strong>
+									</span> 7 inches
+								</p>
+								<p class="description-details">
+									<span class="text-uppercase">
+										<strong>ram:</strong>
+									</span> 1
+									<span class="text-uppercase">gb
+									</span>
+								</p>
 								<p class="device-price">$399<sup> 50</sup></p>
-								<button>
-									<a href="">MORE DETAILS</a>
-								</button> <br>
-								<button>
-									<a href="">ADD TO CART</a> 
-									<img src="photos/icon (2).png" alt="">
-								</button>
+								<a class="mrdetails" href="">
+									<span class="text-uppercase">more details</span>
+								</a>
+								<a class="addtocard" href="">
+									<span class="text-uppercase">add to card</span>
+									<img src="photos/icon (2).png" alt="" class="unhov">
+									<img src="photos/icon (1).png" alt="" class="hov">
+								</a> 
 							</div>
+						</div>
+					</div>
+					<!-- LOAD MORE -->
+					<div class="row">
+						<div class="col-md-12 what">
+							<a class="loadmore" href="">Load more ...</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="hometask">
+		<!-- <div class="hometask">
 			<ul> JS Homework:
 				<li><a href="in-js-01.html">Lesson 01</a></li>
 				<li><a href="in-js-02.html">Lesson 02</a></li>
 				<li><a href="in-js-03.html">Lesson 03</a></li>
+				<li><a href="in-js-04.html">Lesson 04</a></li>
 			</ul>
-		</div>
+		</div> -->
 	</main>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		<p>&#169; Copyright 2017</p>
+	</footer>
 </body>
 </html>
