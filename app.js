@@ -1,4 +1,4 @@
- document.addEventListener("DOMContentLoaded", function(event) {  // Код запускається після загрузки сторінки (закривається вкінці)
+ document.addEventListener("DOMContentLoaded", function(event) {  
 
 	var productsCount = document.getElementById("products-count");
 	console.log(productsCount);
@@ -7,10 +7,10 @@
 	console.log(addToCardBottons);
 
 	for (var i = 0; i < addToCardBottons.length; i++) {
-		addToCardBottons[i].addEventListener("click", function (e) { // Обробник подій (e - скороченно від event)
-			e.preventDefault();                                      // Відміняє перехід ссилки
+		addToCardBottons[i].addEventListener("click", function (e) { 
+			e.preventDefault();                                      
 			console.log("clicked");
-			var prevProductsCount = +productsCount.textContent;       // Считує текст, який є в середені блоку
+			var prevProductsCount = +productsCount.textContent;      
 			productsCount.textContent = prevProductsCount +1;
 		})
 	}
@@ -30,11 +30,10 @@
 			console.log(productLikeBottons2[l].classList);
 			console.log(productLikeBottons1[l].classList);
 			this.classList.toggle("liked-btn");
-			productLikeBottons2[l].addEventListener("mouseout", function (e) {
-				e.preventDefault();
-				productLikeBottons2[l] = this.classList.add("btm-unhov");
-				productLikeBottons2[l] = this.classList.remove("btm-hov");					
-			})
+			// productLikeBottons2[l].addEventListener("mouseout", function () {
+			// 	productLikeBottons2[l] = this.classList.add("btm-unhov");
+			// 	productLikeBottons2[l] = this.classList.remove("btm-hov");					
+			// })
 				
 		})
 	}
