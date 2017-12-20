@@ -1,3 +1,9 @@
+.slider div {
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	padding: 30px 0;
+}
 body {
 	background-image: url(photos/patt.png);
 	font-family: 'Roboto', sans-serif;
@@ -179,11 +185,15 @@ background-color: rgba(202,219,237,0.75);
 	padding: 4px;
 	border: 1px solid #337ab7;
 }
-.like-btm {
+.like-btm, .like-btm1, .like-btm2 {
 	top: 50px;
 	right: 10px;
 	padding: 5px;
 	border: 1px solid #337ab7;
+}
+.liked-btn {
+	border: 1px solid red;
+	background-color: red;
 }
 .device-name {
 	font-size: 30px;
@@ -403,15 +413,14 @@ label {
 }
 .btm-hov {
 	display: none;
+	background-color: #337ab7;
 }
 .icon-background a:hover .btm-hov {
 	display: block;
-	background-color: #337ab7;
 }
 .icon-background a:hover .btm-unhov {
 	display: none;
 }
-placeholder 
 
 /* JS BLOCK*/
 
@@ -435,3 +444,6 @@ placeholder
 	list-style: none;
 	text-align: left;
 }
+.liked-btn {
+	border: 1px solid red;
+	background-color: red;
