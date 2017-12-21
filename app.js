@@ -18,23 +18,24 @@
 	$('.slider').slick({
 	});
 
-	// var productLikeBottons1 = document.querySelectorAll(".like-btm1");
-	// console.log(productLikeBottons1);
-	var productLikeBottons2 = document.querySelectorAll(".like-btm2");
+	var productLikeBottons = document.querySelectorAll(".like-btm2");
+	console.log(productLikeBottons);
+	for (var l = 0; l < productLikeBottons.length; l++) {
+		productLikeBottons[l].addEventListener("click", function (e) {
+			e.preventDefault();
+			this.classList.toggle("liked-btn");
+			this.addEventListener("mouseout", function (e) {
+				this.classList.toggle("btm-hov");
+				this.classList.toggle("btm-unhov");          
+        	});
+		})
+	}
+	var productLikeBottons2 = document.querySelectorAll(".like-btm-2");
 	console.log(productLikeBottons2);
-
 	for (var l = 0; l < productLikeBottons2.length; l++) {
 		productLikeBottons2[l].addEventListener("click", function (e) {
 			e.preventDefault();
 			this.classList.toggle("liked-btn");
-			this.classList.toggle("btm-unhov");
-			this.classList.toggle("btm-hov");
-			// productLikeBottons2[l].addEventListener("mouseout", function (e) {
-			// 	e.preventDefault();
-			// 	productLikeBottons2[l] = this.classList.add("btm-unhov");
-			// 	productLikeBottons2[l] = this.classList.remove("btm-hov");					
-			// });
 		})
 	}
-	console.log(productLikeBottons2[l]);
 });
