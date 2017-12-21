@@ -27,11 +27,13 @@
 		productLikeBottons2[l].addEventListener("click", function (e) {
 			e.preventDefault();
 			this.classList.toggle("liked-btn");
-			productLikeBottons2[l].addEventListener("mouseout", function (e) {
-				e.preventDefault();
-				productLikeBottons2[l] = this.classList.add("btm-unhov");
-				productLikeBottons2[l] = this.classList.remove("btm-hov");					
-			});
+			this.classList.toggle("btm-unhov");
+			this.classList.toggle("btm-hov");
+			// productLikeBottons2[l].addEventListener("mouseout", function (e) {
+			// 	e.preventDefault();
+			// 	productLikeBottons2[l] = this.classList.add("btm-unhov");
+			// 	productLikeBottons2[l] = this.classList.remove("btm-hov");					
+			// });
 		})
 	}
 	console.log(productLikeBottons2[l]);
